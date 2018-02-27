@@ -1,0 +1,17 @@
+{
+  "name": "VLCPlugin",
+  "version": "0.0.75",
+  "cordova": {
+    "id": "VLCPlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "ChenXinPing",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="VLCPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>VLCPlugin</name>
+<js-module name="VLCPlugin" src="www/VLCPlugin.js"><clobbers target="cordova.plugins.VLCPlugin" /></js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="VLCPlugin"><param name="android-package" value="VLCPlugin.VLCPlugin" /></feature>
+</config-file>
+<!-- <config-file target="AndroidManifest.xml" parent="/manifest/application">
+<activity android:name="VLCPlugin.VLCPlugin.VideoVLCActivity" android:label="VideoVLCActivity" >
+</activity>
+</config-file> -->
+<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+<source-file src="src/android/VLCPlugin.java" target-dir="src/VLCPlugin" />
+  <source-file src="jniLibs/armeabi/libanw.10.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libanw.13.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libanw.14.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libanw.18.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libanw.21.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libiomx.10.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libiomx.13.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libiomx.14.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi/libvlcjni.so" target-dir="libs/armeabi"/>
+  <source-file src="jniLibs/armeabi-v7a/libanw.10.so" target-dir="libs/armeabi-v7a"/> 
+  <source-file src="jniLibs/armeabi-v7a/libanw.13.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/armeabi-v7a/libanw.14.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/armeabi-v7a/libanw.18.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/armeabi-v7a/libanw.21.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/armeabi-v7a/libiomx.10.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/armeabi-v7a/libiomx.13.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/armeabi-v7a/libiomx.14.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/armeabi-v7a/libvlcjni.so" target-dir="libs/armeabi-v7a"/>
+  <source-file src="jniLibs/x86/libanw.10.so" target-dir="libs/x86"/>
+  <source-file src="jniLibs/x86/libanw.13.so" target-dir="libs/x86"/>
+  <source-file src="jniLibs/x86/libanw.14.so" target-dir="libs/x86"/>
+  <source-file src="jniLibs/x86/libanw.18.so" target-dir="libs/x86"/> 
+  <source-file src="jniLibs/x86/libanw.21.so" target-dir="libs/x86"/>
+  <source-file src="jniLibs/x86/libiomx.10.so" target-dir="libs/x86"/>
+  <source-file src="jniLibs/x86/libiomx.13.so" target-dir="libs/x86"/>
+  <source-file src="jniLibs/x86/libiomx.14.so" target-dir="libs/x86"/>
+  <source-file src="jniLibs/x86/libvlcjni.so" target-dir="libs/x86"/>
+  <source-file src="src/android/VideoVLCActivity.java" target-dir="src/VLCPlugin" />
+  <source-file src="src/android/xml/activity_video_vlc.xml" target-dir="res/layout" />
+  <source-file src="src/android/xml/menu_video_vlc.xml" target-dir="res/menu" />
+  <source-file src="org/videolan/libvlc/EventHandler.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/HWDecoderUtil.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/IVideoPlayer.java" target-dir="src/org/videolan/libvlc" />  
+  <source-file src="org/videolan/libvlc/LibVLC.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/LibVlcException.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/LibVlcUtil.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/Media.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/MediaDiscoverer.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/MediaList.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/VLCObject.java" target-dir="src/org/videolan/libvlc" />
+  <source-file src="org/videolan/libvlc/util/Extensions.java" target-dir="src/org/videolan/libvlc/util" />
+  <source-file src="org/videolan/libvlc/util/MediaBrowser.java" target-dir="src/org/videolan/libvlc/util" />          
+</platform>
+</plugin>
