@@ -1,5 +1,5 @@
 # VLCPlugin
-a cordova plugin base on org.videolan.libvlc to use VLC for play video only for android.
+a cordova plugin to use VLC for play video only for android  base on org.videolan.libvlc
 
  cordova.plugins.VLCPlugin.play(url,result =>{
       console.log("result:",result);
