@@ -35,7 +35,6 @@ import android.view.MenuItem;
 import android.view.Surface;
 import android.view.SurfaceView;
 import android.widget.FrameLayout;
-import VLCPlugin.VideoVLCActivity;
 import org.videolan.libvlc.IVideoPlayer;
 import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.LibVlcException;
@@ -194,12 +193,7 @@ public class VLCPlugin extends CordovaPlugin implements IVideoPlayer {
         dialog.getWindow().setAttributes(lp);
 
     }
-    protected void open2VLC(String path) {
-        Context context = this.cordova.getActivity().getApplicationContext();
-        Intent intent = new Intent(context, VideoVLCActivity.class);
-        intent.putExtra("videoUrl", path);
-        context.startActivity(intent);
-    }
+  
     public void eventHardwareAccelerationError() {
         Log.e(TAG, "eventHardwareAccelerationError()!");
         return;

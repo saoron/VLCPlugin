@@ -1,6 +1,6 @@
 {
   "name": "VLCPlugin",
-  "version": "0.0.75",
+  "version": "0.0.77",
   "cordova": {
     "id": "VLCPlugin",
     "platforms": [

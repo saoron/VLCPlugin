@@ -39,9 +39,6 @@
   <source-file src="jniLibs/x86/libiomx.13.so" target-dir="libs/x86"/>
   <source-file src="jniLibs/x86/libiomx.14.so" target-dir="libs/x86"/>
   <source-file src="jniLibs/x86/libvlcjni.so" target-dir="libs/x86"/>
-  <source-file src="src/android/VideoVLCActivity.java" target-dir="src/VLCPlugin" />
-  <source-file src="src/android/xml/activity_video_vlc.xml" target-dir="res/layout" />
-  <source-file src="src/android/xml/menu_video_vlc.xml" target-dir="res/menu" />
   <source-file src="org/videolan/libvlc/EventHandler.java" target-dir="src/org/videolan/libvlc" />
   <source-file src="org/videolan/libvlc/HWDecoderUtil.java" target-dir="src/org/videolan/libvlc" />
   <source-file src="org/videolan/libvlc/IVideoPlayer.java" target-dir="src/org/videolan/libvlc" />  
