@@ -38,6 +38,7 @@ import android.widget.FrameLayout;
 import org.videolan.libvlc.IVideoPlayer;
 import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.LibVlcException;
+
 /**
  * This class echoes a string called from JavaScript.
  */

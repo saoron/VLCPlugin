@@ -6,10 +6,9 @@
 <config-file parent="/*" target="res/xml/config.xml">
 <feature name="VLCPlugin"><param name="android-package" value="VLCPlugin.VLCPlugin" /></feature>
 </config-file>
-<!-- <config-file target="AndroidManifest.xml" parent="/manifest/application">
-<activity android:name="VLCPlugin.VLCPlugin.VideoVLCActivity" android:label="VideoVLCActivity" >
-</activity>
-</config-file> -->
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
 <config-file parent="/*" target="AndroidManifest.xml"></config-file>
 <source-file src="src/android/VLCPlugin.java" target-dir="src/VLCPlugin" />
   <source-file src="jniLibs/armeabi/libanw.10.so" target-dir="libs/armeabi"/>
