@@ -9,7 +9,6 @@
     <config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="android.permission.INTERNET" />
     </config-file>
-<config-file parent="/*" target="AndroidManifest.xml"></config-file>
 <source-file src="src/android/VLCPlugin.java" target-dir="src/VLCPlugin" />
   <source-file src="jniLibs/armeabi/libanw.10.so" target-dir="libs/armeabi"/>
   <source-file src="jniLibs/armeabi/libanw.13.so" target-dir="libs/armeabi"/>
